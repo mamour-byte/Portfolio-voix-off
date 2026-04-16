@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fama Ndiaye — Artiste Voix Off</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-mic" viewBox="0 0 24 24">
+      <path d="M12 3a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z" />
+      <path d="M6.5 10.5a5.5 5.5 0 0 0 11 0" />
+      <path d="M12 16v5" />
+      <path d="M8.5 21h7" />
+    </symbol>
+    <symbol id="icon-headphones" viewBox="0 0 24 24">
+      <path d="M4 13a8 8 0 1 1 16 0" />
+      <path d="M4 13v4a2 2 0 0 0 2 2h1v-8H6a2 2 0 0 0-2 2Z" />
+      <path d="M20 13v4a2 2 0 0 1-2 2h-1v-8h1a2 2 0 0 1 2 2Z" />
+    </symbol>
+    <symbol id="icon-broadcast" viewBox="0 0 24 24">
+      <path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+      <path d="M8.5 9.5a5 5 0 0 1 7 0" />
+      <path d="M5 6a10 10 0 0 1 14 0" />
+      <path d="M8 17h8" />
+      <path d="M10 21h4" />
+    </symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24">
+      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+      <path d="M4 9h16v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V9Z" />
+      <path d="M4 13h16" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M6.5 4h3l1.2 4-1.8 1.8a14 14 0 0 0 5.3 5.3l1.8-1.8 4 1.2v3a2 2 0 0 1-2.2 2 16.5 16.5 0 0 1-13.3-13.3A2 2 0 0 1 6.5 4Z" />
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M4 6h16v12H4z" />
+      <path d="m4 8 8 6 8-6" />
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M12 21s-5-4.5-5-10a5 5 0 1 1 10 0c0 5.5-5 10-5 10Z" />
+      <path d="M12 13.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+    </symbol>
+    <symbol id="icon-waveform" viewBox="0 0 24 24">
+      <path d="M4 14v-4" />
+      <path d="M8 18V6" />
+      <path d="M12 15V9" />
+      <path d="M16 20V4" />
+      <path d="M20 13v-2" />
+    </symbol>
+    <symbol id="icon-folder-audio" viewBox="0 0 24 24">
+      <path d="M3 7h6l2 2h10v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3Z" />
+      <path d="M14 11v5" />
+      <path d="M17 12.5a2.5 2.5 0 1 1 0 5" />
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.8 6.7 19l1-5.8L3.5 9.2l5.9-.9L12 3Z" />
+    </symbol>
+    <symbol id="icon-upload" viewBox="0 0 24 24">
+      <path d="M12 16V6" />
+      <path d="m8 10 4-4 4 4" />
+      <path d="M5 18h14" />
+    </symbol>
+    <symbol id="icon-screen" viewBox="0 0 24 24">
+      <path d="M4 5h16v10H4z" />
+      <path d="M8 19h8" />
+      <path d="M12 15v4" />
+      <path d="m10 9 4 3-4 3" />
+    </symbol>
+    <symbol id="icon-signal" viewBox="0 0 24 24">
+      <path d="M5 18h2" />
+      <path d="M9 14h2" />
+      <path d="M13 10h2" />
+      <path d="M17 6h2" />
+      <path d="M6 18v-3" />
+      <path d="M10 14V9" />
+      <path d="M14 10V5" />
+      <path d="M18 6V3" />
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24">
+      <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+      <path d="M3 12h18" />
+      <path d="M12 3a14 14 0 0 1 0 18" />
+      <path d="M12 3a14 14 0 0 0 0 18" />
+    </symbol>
+  </svg>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav>
+    <div class="nav-logo">FN</div>
+    <ul class="nav-links">
+      <li><a href="#about">Profil</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#recordings">Enregistrements</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero" style="max-width:100%;padding:0;">
+    <div class="soundwave-bg">
+      <svg viewBox="0 0 1200 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="wave-svg" fill="none" stroke="#c9a96e" stroke-width="2" points="" />
+      </svg>
+    </div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <p class="hero-tag">Artiste Voix Off · Dakar, Sénégal</p>
+    <h1 class="hero-name">
+      FAMA<br />
+      <em>Ndiaye</em>
+    </h1>
+    <p class="hero-sub">Communication & Médias · Relation Client · Voix Off</p>
+
+    <div class="waveform-live" id="waveform"></div>
+
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary"><span>Me contacter</span></a>
+      <a href="#recordings" class="btn-outline">Écouter les extraits</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <section id="about">
+    <div class="about-visual reveal">
+      <div class="about-card about-card-main">
+        <div class="mic-icon icon-shell icon-shell-lg">
+          <svg class="symbol-icon" aria-hidden="true">
+            <use href="#icon-mic"></use>
+          </svg>
+        </div>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="num">5+</div>
+            <div class="label">Années d'expérience</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">3</div>
+            <div class="label">Langues maîtrisées</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-card about-card-accent">
+        <div class="icon-shell icon-shell-sm">
+          <svg class="symbol-icon" aria-hidden="true">
+            <use href="#icon-headphones"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content reveal">
+      <div class="section-label">À propos</div>
+      <h2 class="section-title">Une voix qui <em>transcende</em></h2>
+      <p class="about-desc">
+        "Artiste voix off passionnée par l'univers des médias, dotée d'une voix adaptable aux univers publicitaires, narratifs et événementiels."
+      </p>
+      <p class="about-text">
+        Forte d'un parcours riche alliant communication, relation client et assistanat de direction, je combine rigueur professionnelle et talent artistique. De Proxi TV aux campagnes pour Fragrance World, ma voix a su s'imposer dans les univers les plus exigeants.
+      </p>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="key">Localisation</div>
+          <div class="val">Dakar, Sénégal</div>
+        </div>
+        <div class="info-item">
+          <div class="key">Formation</div>
+          <div class="val">Licence Communication & Médias — ISM</div>
+        </div>
+        <div class="info-item">
+          <div class="key">Email</div>
+          <div class="val">nfama1133@gmail.com</div>
+        </div>
+        <div class="info-item">
+          <div class="key">Téléphone</div>
+          <div class="val">+221 77 769 76 36</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <section id="skills" style="padding-bottom:0;">
+    <div class="skills-header reveal" style="max-width:600px;">
+      <div class="section-label">Compétences</div>
+      <h2 class="section-title">Savoir-faire & <em>expertise</em></h2>
+    </div>
+  </section>
+  <div class="skills-grid" style="max-width:1400px;margin:0 auto 120px;">
+    <div class="skill-card reveal">
+      <span class="skill-icon icon-shell" aria-hidden="true">
+        <svg class="symbol-icon"><use href="#icon-mic"></use></svg>
+      </span>
+      <div class="skill-cat">Voix & Expression</div>
+      <div class="skill-name">Art vocal</div>
+      <ul class="skill-list">
+        <li>Voix off – publicité, narration</li>
+        <li>Diction & modulation vocale</li>
+        <li>Storytelling & adaptation tonale</li>
+        <li>Expression orale professionnelle</li>
+        <li>Techniques d'enregistrement audio</li>
+      </ul>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon icon-shell" aria-hidden="true">
+        <svg class="symbol-icon"><use href="#icon-broadcast"></use></svg>
+      </span>
+      <div class="skill-cat">Médias & Communication</div>
+      <div class="skill-name">Médias</div>
+      <ul class="skill-list">
+        <li>Communication & médias</li>
+        <li>Présentation d'émissions TV</li>
+        <li>Réalisation de reportages</li>
+        <li>Communication digitale</li>
+        <li>Production audiovisuelle</li>
+      </ul>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon icon-shell" aria-hidden="true">
+        <svg class="symbol-icon"><use href="#icon-briefcase"></use></svg>
+      </span>
+      <div class="skill-cat">Business & Gestion</div>
+      <div class="skill-name">Relation client</div>
+      <ul class="skill-list">
+        <li>Relation client & conseil</li>
+        <li>CRM, mailing</li>
+        <li>Microsoft Office</li>
+        <li>Gestion administrative</li>
+        <li>Polyvalence & adaptabilité</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="full-divider"></div>
+
+  <section id="recordings">
+    <div class="recordings-copy reveal">
+      <div class="section-label">Enregistrements</div>
+      <h2 class="section-title">Une sélection à <em>l'écoute</em></h2>
+      <p class="recordings-lead">
+        Cette section met en avant vos démos vocales, spots publicitaires, narrations et capsules événementielles avec une présentation plus premium et plus crédible pour les clients.
+      </p>
+      <div class="recordings-notes">
+        <div class="recordings-note-item">
+          <svg class="inline-icon" aria-hidden="true"><use href="#icon-waveform"></use></svg>
+          <span>Chaque extrait est affiché dans une carte élégante avec lecteur audio intégré.</span>
+        </div>
+        <div class="recordings-note-item">
+          <svg class="inline-icon" aria-hidden="true"><use href="#icon-folder-audio"></use></svg>
+          <span>Vous pouvez charger vos fichiers déjà réalisés directement depuis votre ordinateur pour les prévisualiser.</span>
+        </div>
+        <div class="recordings-note-item">
+          <svg class="inline-icon" aria-hidden="true"><use href="#icon-star"></use></svg>
+          <span>La structure est prête pour publier ensuite une sélection définitive sur le portfolio.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="recordings-showcase reveal">
+      <!-- <div class="recordings-uploader">
+        <div>
+          <div class="recordings-kicker">Ajouter des fichiers audio</div>
+          <p class="recordings-uploader-text">
+            Importez ici vos fichiers `.mp3`, `.wav`, `.m4a`, `.ogg` ou `.flac` pour tester immédiatement la section.
+          </p>
+        </div>
+        <label for="recordings-input" class="recordings-button">
+          <svg class="button-icon" aria-hidden="true"><use href="#icon-upload"></use></svg>
+          <span>Choisir des fichiers</span>
+        </label>
+        <input id="recordings-input" type="file" accept="audio/*" multiple hidden />
+      </div> -->
+      <div class="recordings-grid" id="recordings-grid"></div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <section id="experience">
+    <div class="reveal" style="margin-bottom:70px;">
+      <div class="section-label">Parcours</div>
+      <h2 class="section-title">Expériences <em>professionnelles</em></h2>
+    </div>
+
+    <div class="exp-grid">
+      <div>
+        <div class="exp-col-title">
+          <svg class="exp-title-icon" aria-hidden="true"><use href="#icon-mic"></use></svg>
+          <span>Voix Off & Médias</span>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Voix Off Artist – Freelance & Production</div>
+          <div class="exp-company">Dakar</div>
+          <div class="exp-date">2024 – aujourd'hui</div>
+          <ul class="exp-desc">
+            <li>Enregistrements pour campagnes publicitaires et contenus digitaux</li>
+            <li>Collaboration : Fragrance World, Vision d'Exception</li>
+            <li>Voix off pour le Show des Légendes – Hip Hop Galsen</li>
+            <li>Collaboration avec producteurs indépendants</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Assistante de Direction & Voix Off</div>
+          <div class="exp-company">Hollywood Production – Dakar</div>
+          <div class="exp-date">2025 – 2026</div>
+          <ul class="exp-desc">
+            <li>Réalisation de voix off pour productions audiovisuelles</li>
+            <li>Coordination administrative et gestion des plannings</li>
+            <li>Communication et suivi des partenaires</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Reporter & Présentatrice TV</div>
+          <div class="exp-company">Proxi TV / Label Média – Dakar</div>
+          <div class="exp-date">2019 – 2022</div>
+          <ul class="exp-desc">
+            <li>Présentation d'émissions TV en direct</li>
+            <li>Réalisation de reportages terrain</li>
+            <li>Travail vocal et expression orale professionnelle</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="exp-col-title">
+          <svg class="exp-title-icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>
+          <span>Expériences complémentaires</span>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Conseillère Commerciale & Chargée Suivi Clientèle</div>
+          <div class="exp-company">OHM Énergie – M2S – Dakar</div>
+          <div class="exp-date">2026</div>
+          <ul class="exp-desc">
+            <li>Gestion et fidélisation du portefeuille clients</li>
+            <li>Conseil et vente de solutions énergie (électricité et gaz)</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Conseillère Commerciale</div>
+          <div class="exp-company">WAY TO CALL / MPG – Dakar</div>
+          <div class="exp-date">2024 – 2025</div>
+          <ul class="exp-desc">
+            <li>Prise de rendez-vous pour la rénovation énergétique</li>
+            <li>Qualification des prospects et argumentation commerciale</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Enquêtrice</div>
+          <div class="exp-company">Quality Center – Dakar</div>
+          <div class="exp-date">2023 – 2024</div>
+          <ul class="exp-desc">
+            <li>Enquêtes pour Orange France, Free, Bouygues Telecom, MGFI</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Gérante & Commerciale</div>
+          <div class="exp-company">Andalocy – Dakar</div>
+          <div class="exp-date">2022 – 2023</div>
+          <ul class="exp-desc">
+            <li>Gestion complète de boutique de parfums marocains</li>
+            <li>Coordinatrice presse – AFAO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <section id="langues">
+    <div class="reveal">
+      <div class="section-label">Langues</div>
+      <h2 class="section-title" style="margin-bottom:48px;">Langues <em>parlées</em></h2>
+
+      <div class="lang-item">
+        <div class="lang-header">
+          <span class="lang-name">Français</span>
+          <span class="lang-level">Excellent</span>
+        </div>
+        <div class="lang-bar"><div class="lang-fill" style="--w:97%"></div></div>
+      </div>
+
+      <div class="lang-item">
+        <div class="lang-header">
+          <span class="lang-name">Wolof</span>
+          <span class="lang-level">Excellent</span>
+        </div>
+        <div class="lang-bar"><div class="lang-fill" style="--w:97%"></div></div>
+      </div>
+
+      <div class="lang-item">
+        <div class="lang-header">
+          <span class="lang-name">Anglais</span>
+          <span class="lang-level">Intermédiaire</span>
+        </div>
+        <div class="lang-bar"><div class="lang-fill" style="--w:55%"></div></div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="section-label">Centres d'intérêt</div>
+      <div class="interests-title">Ce qui me passionne</div>
+      <div class="interests-list">
+        <span class="interest-tag">
+          <svg class="interest-icon" aria-hidden="true"><use href="#icon-screen"></use></svg>
+          <span>Médias & Audiovisuel</span>
+        </span>
+        <span class="interest-tag">
+          <svg class="interest-icon" aria-hidden="true"><use href="#icon-signal"></use></svg>
+          <span>Communication digitale</span>
+        </span>
+        <span class="interest-tag">
+          <svg class="interest-icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>
+          <span>Entrepreneuriat</span>
+        </span>
+        <span class="interest-tag">
+          <svg class="interest-icon" aria-hidden="true"><use href="#icon-mic"></use></svg>
+          <span>Voix Off & Narration</span>
+        </span>
+        <span class="interest-tag">
+          <svg class="interest-icon" aria-hidden="true"><use href="#icon-globe"></use></svg>
+          <span>Afrique de l'Ouest</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <section id="contact" style="max-width:100%;">
+    <p class="contact-tagline reveal">Prête à donner de la voix à vos projets</p>
+    <h2 class="contact-heading reveal">Travaillons <em>ensemble</em></h2>
+
+    <div class="contact-links reveal">
+      <a href="tel:+221777697636" class="contact-link">
+        <div class="icon" aria-hidden="true">
+          <svg class="contact-svg"><use href="#icon-phone"></use></svg>
+        </div>
+        <div class="label">Téléphone</div>
+        <div class="val">+221 77 769 76 36</div>
+      </a>
+      <a href="mailto:nfama1133@gmail.com" class="contact-link">
+        <div class="icon" aria-hidden="true">
+          <svg class="contact-svg"><use href="#icon-mail"></use></svg>
+        </div>
+        <div class="label">Email</div>
+        <div class="val">nfama1133@gmail.com</div>
+      </a>
+      <a href="#" class="contact-link">
+        <div class="icon" aria-hidden="true">
+          <svg class="contact-svg"><use href="#icon-pin"></use></svg>
+        </div>
+        <div class="label">Localisation</div>
+        <div class="val">Dakar, Sénégal</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="copy">© 2026 Fama Ndiaye — Tous droits réservés</span>
+    <span class="brand">FAMA NDIAYE</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
